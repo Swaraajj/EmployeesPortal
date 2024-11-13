@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../../../bs/css/bootstrap.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Emp Portal</a>
+            <form class="row g-3">
+                <div class="col-auto">
+                    <input type="text" placeholder="Enter Username" id="usn-ele" class="form-control">
+                </div>
+                <div class="col-auto">
+                    <input type="password" placeholder="Enter Pin" id="pin-ele" class="form-control">
+                </div>
+
+            </form>
+        </div>
+    </nav>
+    <div class="hidden" id="controls">
+        <section class="container-fluid mt-5">
+            <div class="row">
+                <div class="col d-grid">
+                    <button class="btn btn-dark mx-4" id="all-btn">All Emps</button>
+                </div>
+                <div class="col d-grid">
+                    <button class="btn btn-dark mx-4" id="male-btn">Male Emps</button>
+                </div>
+                <div class="col d-grid">
+                    <button class="btn btn-dark mx-4" id="female-btn">Female Emps</button>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid mt-5">
+            <div class="row">
+                <div class="col d-grid"></div>
+                <div class="col d-grid">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Search Name" id="search-box" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="col d-grid"></div>
+            </div>
+        </section>
+    </div>
+    <section class="container-fluid mt-5">
+        <div class="row">
+            <div class="col">
+                <table class="table text-center table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>Gender</th>
+                            <th>Salary</th>
+                            <th>Email</th>
+                            <th>Company</th>
+                        </tr>
+                    <tbody id="emp-field">
+
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="empPortal2.js"></script>
+</body>
+
+</html>
